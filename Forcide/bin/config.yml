@@ -1,0 +1,207 @@
+SupportOasisDatabase: false
+MessagingChannel: "BungeeCord"
+DoubleJumpEnabled: true
+SpawnFace: "NORTH"
+Ranks:
+  Member:
+    Priority: 6
+    Displayname: "&fMember"
+  Silver:
+    Priority: 5
+    Displayname: "&7Silver"
+  Gold:
+    Priority: 4
+    Displayname: "&6Gold"
+  Diamond:
+    Priority: 3
+    Displayname: "&bDiamond"
+  Elite:
+    Priority: 2
+    Displayname: "&5Elite"
+  Forcide:
+    Priority: 1
+    Displayname: "&2Forcide"
+  Builder:
+    Priority: 2
+    Displayname: "&9Builder"
+  YouTuber:
+    Priority: 2
+    Displayname: "&fYou&cTuber"
+  Famous:
+    Priority: 1
+    Displayname: "&d&oFamous"
+  Partner:
+    Priority: 0
+    Displayname: "&d&l&oPartner"
+  Helper:
+    Priority: 0
+    Displayname: "&dHelper"
+  Moderator:
+    Priority: 0
+    Displayname: "&3Moderator"
+  Moderator+:
+    Priority: 0
+    Displayname: "&3&oModerator+"
+  Admin:
+    Priority: 0
+    Displayname: "&cAdmin"
+  Manager:
+    Priority: 0
+    Displayname: "&9&oManager"
+  SrAdmin:
+    Priority: 0
+    Displayname: "&c&oSr-Admin"
+  Owner:
+    Priority: 0
+    Displayname: "&4&l&oOwner"
+ChatColors:
+  Staff: "GREEN"
+  NonStaff: "WHITE"
+PlayerCountTracker: 
+  Servers:
+    - "ALL"
+    - "hcf"
+    - "kits"
+    - "practice"
+  Ports:
+    hcf: 25567
+    kits: 25568
+    practice: 25570
+Queue:
+  ## In Ticks
+  SendDelay: 10
+  Servers:
+    - "HCF"
+    - "Kits"
+    - "Practice"
+Scoreboard:
+  Title: "&2&lForcide Network"
+  Entries:
+    - "&7&m---------------------"
+    - "&6&lOnline&7:"
+    - "%globalPlayerCount%"
+    - ""
+    - "&6&lRank&7:"
+    - "%rank%"
+    - "%empty%"
+    - "&6&l%queueServer% Queue&7:"
+    - "#%position% of %total%"
+    - ""
+    - "&6&lServers&7:"
+    - " &eHCF&7: &f%playerCounthcf% / %limithcf%"
+    - " %deathban%"
+    - " &eKits&7: &f%playerCountkits% / %limitkits%"
+    - "&7&m---------------------"
+Tab:
+  Left:
+    - "&7&m------------------"
+    - ""
+    - ""
+    - ""
+    - "&a&lWebsite&7:"
+    - "&6forcide.pw"
+    - ""
+    - "&a&lStore&7:"
+    - "&6store.forcide.pw"
+    - ""
+    - "&a&lTeamspeak&7:"
+    - "&6ts.forcide.pw"
+    - ""
+    - "&a&lDiscord&7:"
+    - "&6discord.me/Forcide"
+    - ""
+    - ""
+    - ""
+    - ""
+    - "&7&m------------------"
+  Middle:
+    - "&7&m------------------"
+    - "&2&lForcide Network"
+    - ""
+    - ""
+    - "&a&lPlayer Info&7:"
+    - "&aRank&7: %rank%"
+    - ""
+    - "&a&lQueue Info&7:"
+    - "&6Queued for &f%queue%"
+    - "&fPosition %position% out of %total%"
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - "&7&m------------------"
+  Right:  
+    - "&7&m------------------"
+    - ""
+    - ""
+    - ""
+    - "&a&lGlobal&7:"
+    - "&6%globalPlayerCount% players"
+    - ""
+    - "&a&lHCF&7:"
+    - " &6» &aStatus&7: %statushcf%"
+    - " &6» &aLives&7: &6%lives%"
+    - "&6%playerCounthcf% players"
+    - ""
+    - "&a&lKits&7:"
+    - " &6» &aStatus&7: %statuskits%"
+    - "&6%playerCountkits% players"
+    - ""
+    - "&a&lPractice&7:"
+    - " &6» &aStatus&7: %statuspractice%"
+    - "&6%playerCountpractice% players"
+    - "&7&m------------------"
+ServerSelector:
+  Title: "&6Server Selector"
+  Size: 27
+  FillMaterial: "160:15"
+  QueueLore:
+    - ""
+    - "&e&lQueue Info&7:"
+    - " &6» &ePosition&7: &f%position% out of %total%"
+    - " &6» &eStatus&7: %queueStatus%"
+  Items:
+    Kits:
+      Queue: true
+      Server: "kits"
+      Material: "DIAMOND_SWORD"
+      Displayname: "&6&lKits &7(Season Christmas)"
+      Slot: 14
+      Permission: ""
+      Lore:
+        - ""
+        - "&e&lServer Info&7:"
+        - " &6» &eStatus&7: %statuskits%"
+        - " &6» &eOnline&7: &6%playerCountkits%/%limitkits%"
+        - " &6» &eStarted December 16th."
+        - " &6» &eProtection 1, Sharpness 1."
+        - " &6» &e20 man factions no allies."
+    HCF:
+      Queue: true
+      Server: "hcf"
+      Material: "FISHING_ROD"
+      Displayname: "&6&lHCF &7(Map Christmas)"
+      Slot: 12
+      Permission: ""
+      Lore:
+        - ""
+        - "&e&lServer Info&7:"
+        - " &6» &eStatus&7: %statushcf%"
+        - " &6» &eOnline&7: &6%playerCounthcf%/%limithcf%"
+        - " &6» &eStarted December 26th."
+        - " &6» &eNo Enchants."
+        - " &6» &e5 man factions no allies."
+    Dev:
+      Queue: false
+      Server: "dev"
+      Material: "GRASS"
+      Displayname: "&6&lDEV"
+      Slot: 22
+      Permission: "hub.staff"
+      Lore:
+        - "&eDevelopment & Testing server"

@@ -1,0 +1,11 @@
+name: ForcideHub
+version: 1.0
+author: Edvio
+main: pw.forcide.hub.Hub
+commands:
+  leavequeue:
+    aliases: [lq]
+  setlimit:
+  pausequeue:
+    aliases: [unpausequeue]
+  chat:
